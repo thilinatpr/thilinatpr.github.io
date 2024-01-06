@@ -1,1 +1,39 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button with Class Selector</title>
+  <style>
+    /* Define styles for the button with the "myButton" class */
+    .myButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Define a different style when the button is hovered */
+    .myButton:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button with the "myButton" class -->
+  <button class="myButton" onclick="buttonClicked()">Click me</button>
+
+  <script>
+    // JavaScript function to be executed when the button is clicked
+    function buttonClicked() {
+      alert('Button Clicked!');
+    }
+  </script>
+
+</body>
+</html>
+
