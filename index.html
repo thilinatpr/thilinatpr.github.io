@@ -16,14 +16,8 @@
       cursor: pointer;
     }
 
-    /* Define a different style when the button is hovered */
-    .myButton:hover {
-      background-color: #45a049;
-    }
-
     /* Define styles for the hidden div */
     .hiddenDiv {
-      display: none;
       padding: 10px;
       margin-top: 10px;
       background-color: #f0f0f0;
@@ -37,21 +31,11 @@
   <!-- Button with the "myButton" class -->
   <button class="myButton" onclick="buttonClicked()">Click me</button>
 
-  <!-- Hidden div with the "hiddenDiv" class -->
-  <div class="hiddenDiv" id="hiddenDiv">my hidden text</div>
-
   <script>
     // JavaScript function to be executed when the button is clicked
     function buttonClicked() {
-      // Get the hidden div by its ID
-      var hiddenDiv = document.getElementById('hiddenDiv');
-
-      // Toggle the display property to show or hide the div
-      if (hiddenDiv.style.display === 'none') {
-        hiddenDiv.style.display = 'block';
-      } else {
-        hiddenDiv.style.display = 'none';
-      }
+      // Use document.write to add the hidden div dynamically
+      document.write('<div class="hiddenDiv">my hidden text</div>');
     }
   </script>
 
